@@ -1,0 +1,16 @@
+{
+  "name": "noderenderer",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "env-cmd -f development.env node index.js",
+    "start:qa": "env-cmd -f qa.env node index.js",
+    "start:prod": "env-cmd -f prod.env node index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "env-cmd": "^10.1.0",
+    "express": "^5.2.1"
+  }
+}
