@@ -1,16 +1,16 @@
 {
-  "name": "noderenderer",
+  "name": "cardbyte-proxy",
   "version": "1.0.0",
-  "type": "module",
-  "main": "index.js",
   "scripts": {
-    "start": "env-cmd -f development.env node index.js",
-    "start:qa": "env-cmd -f qa.env node index.js",
-    "start:prod": "env-cmd -f prod.env node index.js"
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
   },
   "dependencies": {
-    "cors": "^2.8.6",
-    "env-cmd": "^10.1.0",
-    "express": "^5.2.1"
+    "express": "^4.18.2",
+    "axios": "^1.6.0",
+    "express-rate-limit": "^7.1.5",
+    "jsonwebtoken": "^9.0.2",
+    "helmet": "^7.1.0",
+    "dotenv": "^16.3.1"
   }
 }
